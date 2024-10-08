@@ -142,7 +142,7 @@ public class PrinterTextParserBarcode implements IPrinterTextParserElement {
     @Override
     public PrinterTextParserBarcode print(EscPosPrinterCommands printerSocket) {
         printerSocket
-                .setAlign(this.align)
+                // .setAlign(this.align)
                 .printBarcode(this.barcode);
         return this;
     }
